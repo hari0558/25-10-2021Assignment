@@ -1,0 +1,15 @@
+use test;
+create table student1(roll_no int primary key,
+student_name varchar(40) not null,fees double);
+insert into student1 values(3, 'krishna',12000);
+select * from student1;
+replace into student1 set roll_no=1 , student_name='harikrishna',fees=12345;
+select * from student1;
+create table states(state_Id varchar(40),
+state_Name varchar(40) not null);
+insert into states(state_id,state_name) values ('S001','Madhya Pradesh');
+insert into states(state_id,state_name) values ('S002','Uttar Pradesh');
+
+select * from states;
+replace into states (state_id,state_name) values('S001','MadhyaPradesh');
+select * from states;
